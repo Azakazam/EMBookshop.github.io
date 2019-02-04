@@ -1,0 +1,228 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>E and M bookshop</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<header>
+<div id="wrapper">
+	<img src="../images/Logo2.jpg" alt="bookshop Logo"/>
+	<img id="picture" src="../images/books.jpg" alt="book">
+	<img id="picture3" src="../images/books.jpg" alt="book">
+	<h1> E and M bookshop</h1>
+	<h3>One book, many mysteries</h3>
+
+</div>
+</header>
+<hr/>
+	<nav>
+	<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="text.html">About us</a></li>
+		<li><a href="forms.html">Register and buy</a></li>
+		<li><a href="tables.html">Products</a></li>
+		<li><a href="references.html">References</a></li>
+		<li><a href="validation.html">Validation</a></li>
+	</ul>
+	</nav>
+	<br>
+	<br>
+<div class="mainPage">
+	<h2><u>Register and buy</u></h2>
+	<p>
+		 Here is where you can register your details to obtain a library card, you have the options of selecting a card for the age range of either under 16 or over 16.
+	</p>
+	<p>
+		Please complete the form below with your details to receive your very own library card, 
+		you can also have a look at what the cards will look like to the side. <br/>Thank you!
+	</p>
+	<div id="librarypic">
+	<h3><u>Library Card Pictures </u></h3>
+	<img class="cardPicture" src="../images/card1.jpg" alt="library card"> <p><em> Library card for ages over 16 </em></p>
+	<img class="cardPicture" src="../images/card2.jpg" alt="library card"> <p><em> Library card for ages under 16 </em></p>
+	</div>
+	
+	<div id="formone">
+		<form name="CustomerDetails">
+		<h3><u>Library card form </u></h3>
+			<div id="card">
+				<img src="../images/card.jpg" alt="library card"/>
+			</div>
+			
+			<p>
+				<label>Title</label>
+				<select id="title" name="title">
+					<option value="Other">Other</option>
+					<option value="Mr">Mr</option>
+					<option value="Miss"> Miss</option>
+					<option value="Mrs">Mrs</option>
+					<option value="Ms">Ms</option>
+				</select>
+			</p>
+		
+			<p>
+				<label for="FirstName">First Name:</label><input type="text" id="FirstName" name="firstname"/> 
+				<label for="FamilyName">Family Name:</label><input type="text" id="FamilyName" name="familyname"/>
+			</p>
+			<fieldset>
+			<legend>Pick your gender:</legend>
+			<p>
+				<label for="male">Male</label> <input type="radio" name="gender" id="male" value="male"/>  
+				<label for="female">Female</label> <input type="radio" name="gender" id="female" value="female"/>  
+			</p>
+			</fieldset>
+			
+			
+			<fieldset>
+			<legend>Pick a library card according to your age:</legend>
+			<p>
+				<label for="Under16librarycard">Under 16 library card</label> <input type="radio" name="Librarycard" id="Under16librarycard" value="Under"/>  
+				<label for="Over16librarycard">Over 16 library card</label><input type="radio" name="Librarycard" id="Over16librarycard" value="Over"/>
+			</p>
+			</fieldset>
+			<p>
+				<label for="EmailAddress">Email Address:</label> <input type="Email" id="EmailAddress" name="email"/>
+			</p>
+			<p>
+			<label>Comments:</label>
+			</p>
+			<textarea rows="10" cols="25" placeholder="Please enter your review of using this form here!"></textarea>
+			<p>
+			<label>Click here to register your details </label><input type="button" value="Register" onclick="return checkmyform()"/> 
+			</p>
+		</form>
+	</div>
+	<h3><u>Select Your Books</u></h3>
+	<p>
+		 Here is where you can select and choose the amount of books you want to buy, the site will automatically calculate how much will you be spending.
+	</p>
+	
+	<form name="CustomerDetails">
+	<img id="owl" src="../images/owl.png" alt="owl books">
+		<table>
+		<tr>
+			<th>
+				Book Name
+			</th>
+			<th>
+				Quantity
+			</th>
+			<th>
+				Price
+			</th>
+			<th>
+				Total cost
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" name="book1" value=""/> Big red barn
+			</td>
+			<td>
+				<select name="quality1">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</td>
+			<td>
+				£2.95
+			</td>
+			<td>
+				Cost:<input type="text" name="rrp1" value="0.00"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" name="book2" value=""/> Programming Java
+			</td>
+			<td>
+				<select name="quality2">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</td>
+			<td>
+				£2.50
+			</td>
+			<td>
+				Cost:<input type="text" name="rrp2" value="0.00"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" name="book3" value=""/> Elementary Calculus
+			</td>
+			<td>
+				<select name="quality3">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</td>
+			<td>
+				£1.45
+			</td>
+			<td>
+				Cost:<input type="text" name="rrp3" value="0.00"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" name="book4" value=""/> Whitehouse cook book
+			</td>
+			<td>
+				<select name="quality4">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</td>
+			<td>
+				£1.63
+			</td>
+			<td>
+				Cost:<input type="text" name="rrp4" value="0.00"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" name="book5" value=""/> Bob the builder
+			</td>
+			<td>
+				<select name="quality5">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</td>
+			<td>
+				£3.50
+			</td>
+			<td>
+				Cost:<input type="text" name="rrp5" value="0.00"/>
+			</td>
+		</tr>
+		</table>
+		<p>
+			Click here to check your total cost:<input type="button" value="check cost" onclick="Bookcost()"/>
+		</p>
+		<p>
+			Total cost: <input type="text" name="totalcost1" value="0.00"/>
+		</p>
+		
+	</form>
+</div>
+	
+</body>
+</html>
