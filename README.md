@@ -1,0 +1,2 @@
+# EMBookshop.github.io
+This was my first ever website created in my first year of university using HTML and CSS only.   This is where it all began with learning other web technologies and focusing on the main building blocks of any website. Developing with the basic technologies of HTML and CSS gave me an understanding of how a website is created from the ground up and how different web languages serve a different purpose in the development of any website
